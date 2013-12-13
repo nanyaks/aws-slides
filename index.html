@@ -62,25 +62,119 @@
 				</section>
 				<!-- Example of nested vertical slides -->
 				<section>
-						<h2 class="staticHd">Why should I care?</h2>
+					<h2 class="staticHd">Why should I care?</h2>
+					<section></section>
 					<section>
-						<div class="point">Variable Expense:</div>
+						<div class="point">Variable Expense</div>
+						<div id="name" class=" subnotes">
+						   Save costs by paying only for what you use. No upfront payments and freedom to opt out
+						</div>
 					</section>
 					<section>
 						<div id="point" class="point">
-						   Standard and Available Computing Infrastructure
+						   Standard and Highly Available Computing units
+						</div>
+						<div id="j" class="subnotes">
+							Using the AWS, you have access to the same Infrastructure that powers all Amazon technology.
 						</div>
 					</section>
 					<section>
-						<div id="name" class="point">
-							Elastic Capacity <br /><span>[ No need to guess capacity requirements and over provision hardware ]</span>
+						<div class="point">
+							Elastic Capacity
 						</div>
+						<div class="subnotes">No need to guess capacity requirements and over provision hardware</div>
 					</section>
 					<section>
 						<div id="j" class="point">
-							Speed and Agility <span>[ Get Infrastructure in minutes and not in weeks ]</span>
+							Speed of Deployment
+						</div>
+						<div class="subnotes">Get Infrastructure deployed and production ready in minutes and not in weeks</div>
+					</section>
+					<section>
+						<div id="j" class="point">
+							Focus on your Business
+						</div>
+						<div class="subnotes">You don't have to worry about the intricacies of building a data center.</div>
+					</section>
+				</section> <!-- why? -->
+
+				<section>
+					<h2>Reference Model</h2>
+					<div id="name" class="image-point">
+						<img src="./img/aws-stack.png" alt="aws reference stack">
+					</div>
+				</section> <!-- reference model -->
+
+				<section>
+					<h3>AWS Global Infrastructure</h3>
+					<ul>
+					<li>Regions</li>
+					<li>Availability Zones</li>
+					<li>Edge Locations</li>
+					</ul>
+				</section> <!-- global infrastructure -->
+
+				<section>
+					<h3 class="staticHd">Networking Services</h3>
+					<section>
+						<h5>Direct Connect</h5>
+						<p>AWS provides a direct connection between your IT infrastructure and the AWS data centers.</p>
+						<div id="name" class="subnotes">
+						   With this, you can extend your VLANs and privately facing infrastructure into the AWS/Cloud
 						</div>
 					</section>
+					<section>
+						<h5>VPN</h5>
+						<p>AWS provides you the ability to create your own VLAN on the Amazon Infrastructure and have a VPN connection acroos the internet.</p>
+					</section>
+					<section>
+						<h5>Virtual Cloud</h5>
+						<p>Create an isolated network off a section of the AWS Cloud where you can launch resources and have complete control over your networking environment</p>
+					</section>
+					<section>
+						<ul class="info">
+							<li>
+								<img src="./img/route53a.jpg">
+							</li>
+							<li>
+								<h5>Route 53</h5>
+								<p>This is a global DNS Service that gives 100% request-reply guarantee.</p>
+								<p>Highly available and scalable Domain Name System that is extremely reliable and cost effective.</p>
+							</li>
+						</ul>
+					</section>
+				</section> <!-- networking -->
+
+				<section>
+					<div class="staticHd-img">
+						<table class="">
+							<tr>
+								<td><img style="border: 0px solid green;" src="./img/ec2-main.png"></td>
+								<td><h3 class="hack-take-up">Elastic Compute Cloud</h3></td>
+							</tr>
+						</table>
+						
+					</div>
+					<section>
+						<div class="point">Total of 13 Instance types available.</div>
+						<div class="subnotes">Range from very small ( micro instances ) to very large computation ( cluster compute ) instances.</div>
+					</section>
+					<section>Run windows or linux instances</section>
+					<section>Save your configurations as custom image types <span class="highsectionght">(AMI)</span> from which other machines can be launched.</section>
+					<section>You have full control of your instance</section>
+					<section>You can publish metrics to cloudwatch and have detailed stats on instance health</section>
+				</section> <!-- Ec2 -->
+
+				<section>
+					<div class="staticHd">
+						<h3 class="hack-take-up">Auto Scaling</h3>
+					</div>
+					<section>
+						<div class="point">Allows automatic re-sizing of compute clusters based on demand</div>
+						<div class="subnotes">Range from very small ( micro instances ) to very large computation ( cluster compute ) instances.</div>
+					</section>
+						<section>Allows you to define minimum and maximum instance pool size for when scaling up or down is needed</section>
+						<section>Uses metrics gathered by Cloudwatch to drive the scaling</section>
 				</section>
 
 				<section>

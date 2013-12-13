@@ -139,5 +139,40 @@ body {
 
 .staticHd {
 	position: relative;
-	top: -230px;
+	top: -250px;
+}
+
+.staticHd-img {
+	position: relative;
+	top: -280px;
+}
+
+div.subnotes {
+	/* color: #24968f; */
+	color: #909090;
+	padding: 30px 0px;
+	border: 0px solid red;
+	font-weight: 100;
+}
+
+ul.info {
+	list-style: none;
+}
+
+ul.info li {
+	display: inline;
+}
+
+ul.withImgLi {
+	list-style: none;
+	border: 1px solid green;
+}
+
+ul.withImgLi li {
+	float: left;
+}
+
+td h3.hack-take-up {
+	position: relative;
+	top: -80px;
 }
