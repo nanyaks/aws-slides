@@ -169,13 +169,106 @@
 					<div class="staticHd">
 						<h3 class="hack-take-up">Auto Scaling</h3>
 					</div>
+					<img src="./img/auto-scaling.png">
 					<section>
 						<div class="point">Allows automatic re-sizing of compute clusters based on demand</div>
-						<div class="subnotes">Range from very small ( micro instances ) to very large computation ( cluster compute ) instances.</div>
 					</section>
-						<section>Allows you to define minimum and maximum instance pool size for when scaling up or down is needed</section>
-						<section>Uses metrics gathered by Cloudwatch to drive the scaling</section>
-				</section>
+					<section>Allows you to define minimum and maximum instance pool size for when scaling up or down is needed</section>
+					<section>Uses metrics gathered by Cloudwatch to drive the scaling</section>
+				</section> <!-- auto scaling -->
+
+				<section>
+					<div class="staticHd">
+						<h3 class="hack-take-up">Load Balancing</h3>
+					</div>
+					<img src="./img/elb.png">
+					<section>
+						<div class="point">Distribute load across instances in multiple availability zones</div>
+						<div class="subnotes">The Elastic Load balancer allows you to create highly scalable applications on the Amazon Cloud.</div>
+					</section>
+					<section>It automatically checks the health of instances and takes them in or out of service</section>
+					<section>
+						<div id="name" class="point">
+						   Session Stickiness
+						</div>
+						<div id="name" class="subnotes">
+							The load balancer routes requests to the same instance when a session is started on that instance.
+						</div>
+					</section>
+				</section> <!-- elb -->
+				
+				<section>
+					<div class="staticHd">
+						<h3 class="hack-take-up">Simple Storage Service (S3)</h3>
+					</div>
+					<img src="./img/s3.png">
+					<section>
+						<div class="point">An object storage platform that acts as a fundamental bedrock of many applications</div>
+						<div class="subnotes">Unlimited storage of any type of data upto 5TB in size</div>
+					</section>
+				</section> <!-- S3 storage -->
+
+				<section>
+					<div class="staticHd">
+						<h3 class="hack-take-up">Elastic Block Storage (EBS)</h3>
+					</div>
+					<img src="./img/ebs-main.png">
+					<section>
+						<div class="point">This is a high performance block storage device that can be mounted as drives on instances</div>
+						<div class="subnotes">With flexible sizes, you have more than enough space for your application environment</div>
+					</section>
+					<section>
+						<div class="point">The EBS volume is private to your instance</div>
+						<div id="name" class="subnotes">
+							The operating system of an instance resides on the EBS volume and any launched instance will boot from this drive
+						</div>
+					</section>
+					<section>
+						<div class="point">Integrates with snapshotting features</div>
+						<div id="name" class="subnotes">
+							Snapshots of the EBS volumes can be taken for point in time restore or even used to launch another instance.
+						</div>
+					</section>
+				</section> <!-- EBS -->
+
+				<section>
+					<div class="staticHd">
+						<h3 class="hack-take-up">Relational Database Service (RDS)</h3>
+					</div>
+					<img src="./img/rds-main.png">
+					<section>
+						<div class="point">Provides Database-as-a-service</div>
+						<div class="subnotes">Managing a production database can be a real pain, RDS alleviates this for you.</div>
+					</section>
+					<section>
+						<div class="point">Easily launch scalable and fault tolerant Mysql, Oracle or SQL Server databases</div>
+						<div id="name" class="subnotes">
+							Like the EC2, the RDS allows you to launch instances based on classes (ie. micro, small, medium, large etc)
+						</div>
+					</section>
+				</section> <!-- rds -->
+
+				<section>
+					<div class="staticHd">
+						<h3 class="hack-take-up">CloudFront</h3>
+					</div>
+					<img src="./img/cloudfront-main.png">
+					<section>
+						<div class="point">This serves as a Content Delivery Network for static assets on the AWS stack.</div>
+						<div class="subnotes">Easily distibute content to your users with low latency and high data transfer speeds.</div>
+					</section>
+				</section> <!-- EBS -->
+
+				<section>
+					<div class="staticHd">
+						<h3 class="hack-take-up">Elastic Beanstalk</h3>
+					</div>
+					<img src="./img/bean-main.png">
+					<section>
+						<div class="point">Rapidly deploy your applications to the Amazon Cloud.</div>
+						<div class="subnotes">The Elastic Beanstalk allows automatic creation of application environment and proceeds with application deployment.</div>
+					</section>
+				</section> <!-- EBS -->
 
 				<section>
 					<h2>Nginx</h2>
