@@ -177,3 +177,8 @@ td h3.hack-take-up {
 	top: -80px;
 }
 
+div.pricing {
+	margin-top: 10px;
+	color: #929292;
+	font-size: 0.9em;
+}
